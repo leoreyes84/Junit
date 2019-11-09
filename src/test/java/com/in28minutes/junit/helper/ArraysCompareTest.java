@@ -7,7 +7,7 @@ import java.util.Arrays;
 import org.junit.Test;
 
 public class ArraysCompareTest {
-
+	
 	@Test
 	public void testArraySort_RandomArray() {
 		int[] numbers = { 12, 3, 4, 1 };
@@ -23,10 +23,10 @@ public class ArraysCompareTest {
 		Arrays.sort(numbers);
 	}
 
-	@Test(timeout = 100)
+	@Test(timeout = 1000)
 	public void testArrayPerformance() {
 		int[] array = { 1, 4, 8 };
-		for(int i = 0; i<100000000; i++) {
+		for(int i = 0; i<10000000; i++) {
 			array[0] = i;
 			Arrays.sort(array);
 		}
